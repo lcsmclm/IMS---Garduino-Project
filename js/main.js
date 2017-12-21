@@ -1,6 +1,8 @@
 (function (){
 var phone = document.querySelector('.intro-phone-app img');
 var text = document.querySelector('.article-text');
+
+
 function sect2activate() {
 screenPOS = window.scrollY;
 picLoc = phone.offsetTop;
