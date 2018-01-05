@@ -1,0 +1,10 @@
+.lead-svg{
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  top: 100%;
+  display: inline-block;
+  border: 1px solid red;
+  display: none !important;
+}

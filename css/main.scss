@@ -1,3 +1,4 @@
+@import 'svg';
 $bluecorporate: #1F70A5;
 $graycorporate: #414042;
 $gnomeblue: #2AA6DA;
@@ -10,6 +11,7 @@ $gnomebeige: #E7D7AE;
 
 $topGradient: #7e8dc0;
 $bottomGradient: #3a92a4;
+
 
 @mixin gradient() {
      background: linear-gradient(to bottom,  $topGradient 0%,$bottomGradient 100%);
@@ -31,12 +33,14 @@ html {
         .splash-container{
             height:100%;
         }
+
     }
 }
 
 #splash {
     height: 100%;
     margin:0;
+    overflow: hidden;
     .row {
         height: 100%;
         margin:0;
@@ -46,10 +50,40 @@ html {
         margin:auto;
         display: block;
         padding-top:6rem;
+        animation-name: fadeIn;
+        animation-duration: 0.75s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.75s;
+        opacity: 0;
     }
     .leafloader{
         max-width:300px;
         margin:auto;
         display: block;
+        position: relative;
+        animation-name: load;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.3s;
+
+        top: 500px;
     }
+}
+@keyframes load{
+  0%{
+    top: 500px;
+    transform: scale(0);
+  }
+  100%{
+    top: 0px;
+    transform: scale(1);
+  }
+}
+@keyframes fadeIn{
+  0%{
+opacity: 0;
+  }
+  100%{
+opacity: 1;
+  }
 }
