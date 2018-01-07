@@ -1,0 +1,14 @@
+html {
+  height: 100%; }
+  html body {
+    background: linear-gradient(to bottom, #7e8dc0 0%, #3a92a4 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%; }
+    html body .container-fluid {
+      margin: 0;
+      padding: 0; }
+    html body .splash-container {
+      height: 100%; }
+
+/*# sourceMappingURL=splash.css.map */
