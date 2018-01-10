@@ -1,0 +1,698 @@
+@import 'svg';
+@import 'plantlist';
+@import 'utils';
+.data-details{
+ margin-top: 1rem;
+    li{
+      list-style: none;
+      border-top: 1px solid #eee;
+      padding: 1rem 5px;
+      &:last-child{
+        border-bottom: 1px solid #eee;
+      }
+    }
+
+}
+
+.stat-data{
+  position: relative;
+  padding: 2rem;
+  h2{
+    margin-top: 2rem;
+  }
+  h2, p{
+    text-align: center;
+  }
+  h3{
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .button-data{
+    margin-bottom: 1rem;
+    .select{
+      display: flex;
+      button{
+        flex: 1 1 auto;
+      }
+    }
+    .new{
+      display: flex;
+      button{
+        flex: 1 1 auto;
+      }
+    }
+    div{
+      //flex: 1 1 auto;
+      #moistureselect{
+        background-color: #3CAED6;
+        color: #fff;
+        border-color: #3CAED6;
+      }
+      #tempselect{
+        background-color: #D67348;
+        color: #fff;
+        border-color: #D67348
+      }
+      #lightselect{
+        background-color: #FCD565;
+        color: #fff;
+        border-color: #FCD565;
+      }
+      button{
+        outline: 0;
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 1rem;
+        border: 1px solid #95989A;
+        background-color: #fff;
+        color: #000;
+
+      }
+
+    }
+  }
+  .temp{
+    position: relative;
+    svg{
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+.statlist{
+  h1{
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+.addgnome{
+  overflow: hidden;
+}
+.new-gnome-header{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  .new-gnome-image{
+    flex: 0 1 auto;
+    max-width: 200px;
+    img{
+      width: 100%;
+    }
+    p{
+      color:#8DC641;
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
+  .new-gnome-header-info{
+    padding: 1rem 2rem;
+    h2{
+      font-weight: 700;
+    }
+    .row{
+      padding: 0;
+      margin: 0;
+      align-items: flex-start;
+      display: flex;
+      .status{
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        img{
+          flex: 0 1 auto;
+          height: 20px;
+
+        }
+        p{color: #8DC641;
+          padding-left:10px;
+          margin-top: 15px;
+          flex: 1 1 auto;
+        }
+      }
+    }
+  }
+}
+.close{
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  z-index: 5;
+  @media(min-width: 768px){
+    display: none;
+  }
+}
+.alert-profile{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px 10px;
+  img{
+    width: 20px;
+    height: 20px;
+top: 0;
+  }
+}
+.general-settings{
+  position: relative;
+  display: block;
+  max-width: 100%;
+  h1{
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    font-weight: 700;
+
+  }
+  form{
+    .setting-field{
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #95989A;
+        padding: 1rem;
+&:last-of-type {
+  border-bottom: 1px solid #95989A;
+}
+        label{
+          margin: 0 5px;
+          opacity: 0.5;
+          flex: 0 1 auto;
+        }
+        input{
+          flex: 1 1 auto;
+
+          border: 0;
+          padding: 5px;
+          outline: 0;
+        }
+        select{
+          background-color: transparent;
+          border: 0;
+          outline: 0;
+        }
+    }
+
+
+  }
+
+  .std-btn{
+    margin: 30px auto;
+    color: #fff;
+    display: block;
+
+    text-align: center;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 450px;
+  }
+  h2{
+    width: auto;
+    display: inline;
+    .user-logout{
+      width: auto;
+      display: inline-block;
+    }
+  }
+  #user-save{
+    margin-top: 2.5rem;
+    background-color: #8DC641;
+  }
+  #user-logout{
+    background-color: #C64141;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+}
+
+#add-plant{
+  background-color: #8DC641;
+}
+.alert-profile.passive{
+  display: none;
+}
+
+.initial-detail{
+  opacity: 0.5;
+  padding: 6rem 2rem;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.status-data{
+  margin: 30px 0 !important;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .data-gauge{
+    position: absolute;
+    // left: 70%; /**100% will not work but nothing will ever get to 100%**/
+    right: 20px;
+    top: 0;
+    height: 5px;
+    width: 10px;
+    height: 100%;
+    background-color: #F7941D;
+  }
+  .status-ico{
+    flex: 0 1 auto;
+    max-width: 20px;
+    max-height: 20px;
+    img{
+      width: 100%;
+    }
+  }
+  .progress{
+    align-items: center;
+    position: relative;
+    top: 5px;
+    margin: 0 15px;
+    flex: 1 1 auto;
+  }
+  .progress-bar{
+    padding: 10px 0;
+  }
+
+}
+
+.moisture-stats{
+    .min-data.progress-bar{
+      background-color: #EEE !important;
+    }
+    .max-data.progress-bar{
+      background-color: #EEE !important;
+    }
+
+}
+.thermo-stats{
+  .min-data.progress-bar{
+    background-color: #EEE !important;
+  }
+  .max-data.progress-bar{
+    background-color: #EEE !important;
+  }
+}
+.sun-stats{
+  .min-data.progress-bar{
+    background-color: #EEE !important;
+  }
+  .max-data.progress-bar{
+    background-color: #EEE !important;
+  }
+}
+.ideal-data.progress-bar{
+  background-color: #8DC641 !important;
+}
+html {
+    box-sizing: border-box;
+    body {
+        overflow-x: hidden;
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+        .row {
+            margin:0;
+        }
+    }
+}
+
+#splash {
+    height: 100%;
+    margin: 0;
+    .row {
+        height: 100%;
+        margin: 0;
+    }
+    .wordmark {
+        max-width: 450px;
+        margin: auto;
+        display: block;
+        padding-top: 6rem;
+    }
+    .leafloader {
+        max-width: 300px;
+        margin: auto;
+        display: block;
+    }
+}
+
+
+    .top-bar {
+        @include gradient();
+        background-attachment: initial;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        z-index: 10000;
+    }
+    .tab-bar {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        background-color: $bottomGradient;
+        z-index:999;
+        @media (min-width: 992px) {
+            bottom:0;
+            height: calc(100vh - 44px);
+            width: 103px;
+            z-index: 0;
+        }
+    }
+
+
+    .navbar-brand {
+        width: 35px;
+        margin: auto;
+        opacity: 0.5;
+        @media (min-width: 992px) {
+            width: 65%;
+        }
+    }
+    .active {
+        opacity: 1;
+    }
+    .logo {
+        width: 138px;
+        margin: auto;
+    }
+
+
+#content {
+  min-height: 100vh;
+    padding-top: 60px;
+    padding-bottom:62.172px;
+    .rightpanel{
+        display:none;
+        border-left-style: solid;
+        border-bottom-color: lightgray;
+        border-left-width: 0px;
+    }.expand-button{
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .external-profile-links{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin: 45px 0;
+        margin-bottom: 45px;
+      }
+      .expand-button{
+        display: none;
+      }
+        max-width: 1440px;
+    .screenrow {
+        display: flex;
+        overflow: hidden;
+        height: calc(100vh - 60px);
+        position: relative;
+        width: 100%;
+        .leftpanel,
+        .rightpanel{
+            overflow: auto;
+            height: auto;
+            display:block;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: none;
+            border-left-width: 0.5px !important;
+            &::-webkit-scrollbar{
+                  display: none;
+            }
+        }
+    }
+    }
+    @media (min-width: 992px) {
+        padding-bottom:0;
+        padding-left: 103px;
+    }
+.profile-banner{
+  padding: 6rem 0;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+.profile-details-content{
+  padding: 2rem;
+  h2{
+    padding: 1rem 0;
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+  }
+  .title{
+    font-weight: 500;
+  }
+  .profile-status{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    .status{
+          align-items: center;
+      display: flex;
+    img{
+      padding: 0;
+      margin: 0;
+      width: 25px;
+      height: 70px;
+      flex: 0 1 auto;
+    }
+    p{      padding: 0;
+          margin: 0;
+      padding: 5px 20px;
+      flex: 0 1 auto;
+    }
+    }
+  }
+}
+.plantdetail{
+.info-head{
+  padding: 2rem;
+
+  .alert-profile{
+  position: relative !important;
+  display: inlne-block;
+  float: right;
+
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
+  }
+  .statusbox{
+    display: flex;
+  justify-content: flex-start;
+    align-items: center;
+    .status{
+      display: inline-flex;
+      align-items: center;
+    margin-right: 1.9rem;
+    &:last-child{
+      margin-right: 0;
+    }
+      img{
+        flex: 0 1 auto;
+        width: 20px;
+      }
+      p{
+        position: relative;
+        top: 7px;
+        padding: 10px;
+        flex: 0 1 auto;
+      }
+    }
+
+  }
+  h2{
+
+
+    font-size: 2rem;
+    font-weight: 500;
+    float: left;
+  }
+  h3{
+    clear: both;
+    font-size: 1.25rem;
+
+    font-weight: 300;
+  }
+}
+.profile-details{
+  padding: 0 2rem;
+}
+}
+    .plantselect {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+
+        li {
+            width: 100%;
+            padding: 1rem;
+            position: relative;
+            background-color: white;
+            border-right-style: solid;
+            border-right-color: $gnomegreen;
+            border-right-width: 12px;
+            border-bottom-style: solid;
+            border-bottom-color: lightgray;
+            border-bottom-width: 0.5px;
+            &:nth-child(2n) {
+                background-color: $gnomelightgray;
+                border-right-color: $gnomeblue;
+            }
+            .info {
+                display: inline-block;
+                width: calc(100% - 85px);
+                h2{
+                    font-size:1.5rem;
+                }
+                h3{
+                    font-size:1rem;
+                    font-weight: 300;
+                }
+                .status {
+                    margin: 0;
+                    padding: 0;
+                    width: 33.333%;
+                    max-width: 120px;
+                    margin-top: .3rem;
+                    img {
+                        height: 25px;
+                        margin-right: 8px;
+                        float: left;
+                    }
+                    p {
+                        font-size:0.8rem;
+                        margin-top: 4px;
+                    }
+                }
+
+            }
+            .profile {
+                width: 80px;
+                position: relative;
+                display: inline-block;
+                padding: 10px;
+                .profile-thumbnail{
+                  border: 1px solid red;
+                  border-radius: 25px;
+                  width: 60px;
+                  height: 60px;
+                  overflow: hidden;
+                  top: 0;
+
+                }
+                .last-updated {
+                    margin: 0;
+                    text-align: center;
+                    font-size: 0.75rem;
+                    padding-top: 7px;
+                }
+            }
+
+
+            .expand-profile{
+              position: relative;
+              display: block;
+              height: 100%;
+              align-items: center;
+              &:hover{
+                cursor: pointer;
+              }
+              .profile-details{
+            width: 100%;
+            align-items: center;
+            .profile-status{
+max-height: 0px;
+overflow: hidden;
+transition: 0.75s ease;
+            }
+
+
+              }
+              .expand-button{
+                position: relative;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 1rem;
+                div{
+                  height: 1px;
+                  margin: 2px auto;
+                  padding: 0;
+                  width: 45px;
+                  background-color: #B1B2B2;
+                  display: block;
+                }
+              }
+            }
+        }
+    }
+    .external-profile-links{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      margin: 45px 0;
+      margin-bottom: 2rem;
+      a{
+        flex: 0 1 auto;
+        color: #000;
+        font-weight: 300;
+        border: 1px solid #C6C6C6;
+        padding: 1rem;
+        position: relative;
+        margin:15px;
+      }
+    }
+    .profile-large-links{
+      margin: 0;
+      bottom: 0;
+      padding-top: 2rem;
+      margin-top: 1rem;
+      justify-content: flex-start;
+      margin-bottom: 75px;
+
+p{
+  width: 50%;
+  display: block;
+  margin: 0 10px;
+}
+      a{
+text-align: center;
+margin: 0;
+width: 100%;
+        display: inline-block;
+        flex: 1 1 auto;
+        padding: 1rem;
+      }
+    }
+    //**THERMOSTAT COLORS**
+
+
+    .addplant {
+        a{
+            text-align: center;
+            text-decoration: none;
+            padding: 2rem;
+            display: block;
+            color: #696969;
+            font-size: .9rem;
+        }
+        .plus {
+            width:10px;
+            margin:5px;
+        }
+    }
+    .plantdetail {
+        width: 100%;
+        min-height: 100vh;
+        margin-left:0.5px;
+    }
+
+}

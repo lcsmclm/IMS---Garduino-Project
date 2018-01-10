@@ -1,0 +1,79 @@
+.container-plantdb .plant-list {
+  padding-top: 0 !important;
+  background-color: #fff; }
+  .container-plantdb .plant-list form {
+    background-color: #E8E9EA;
+    display: flex;
+    max-width: 80%;
+    margin: 1rem auto;
+    position: relative;
+    padding: 0.1rem 1rem;
+    border-radius: 25px; }
+    .container-plantdb .plant-list form input {
+      background-color: transparent;
+      border: 0px;
+      font-size: 0.75rem;
+      flex: 1 1 auto;
+      outline: 0; }
+    .container-plantdb .plant-list form label {
+      font-size: 1rem;
+      padding: 0.3rem;
+      flex: 0 1 auto;
+      position: relative;
+      display: inline-block;
+      top: 2px; }
+  .container-plantdb .plant-list h2 {
+    padding: 1rem;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.25rem; }
+  .container-plantdb .plant-list .plantlist-feed {
+    display: flex;
+    flex-direction: column; }
+    .container-plantdb .plant-list .plantlist-feed .plantlist-single-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      align-content: space-between;
+      margin: 0 !important;
+      padding: 1rem !important;
+      border-top: 1px solid #95989A; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container .plantlist-single-preview {
+        flex: 1 1 auto; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container p, .container-plantdb .plant-list .plantlist-feed .plantlist-single-container h3 {
+        margin: 0;
+        padding: 0; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container h3 {
+        font-size: 1rem;
+        font-weight: 300; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container a {
+        color: #000;
+        text-decoration: none; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container:nth-child(odd) {
+        background-color: #F8F8F8; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container:nth-child(even) {
+        background-color: #FFF; }
+      .container-plantdb .plant-list .plantlist-feed .plantlist-single-container:last-child {
+        border-bottom: 1px solid #95989A; }
+    .container-plantdb .plant-list .plantlist-feed .arrow {
+      color: #C7C7CC; }
+.container-plantdb .plantlist-details {
+  flex: 0 1 auto;
+  position: absolute;
+  height: calc(100vh-67px);
+  left: 0;
+  display: none;
+  background-color: #fff;
+  height: 100%; }
+
+@media (min-width: 768px) {
+  .container-plantdb .plantlist-details {
+    display: inline-block;
+    flex: 1 1 auto;
+    height: auto;
+    top: 0;
+    position: relative;
+    border-left: 1px solid #000; } }
+
+/*# sourceMappingURL=plantlist.css.map */

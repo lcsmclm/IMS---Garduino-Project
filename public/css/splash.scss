@@ -1,0 +1,130 @@
+$topGradient: #7e8dc0;
+$bottomGradient: #3a92a4;
+
+@mixin gradient() {
+    background: linear-gradient(to bottom, $topGradient 0%, $bottomGradient 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.login-load{
+  display: none;
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+padding: 7.5rem 2rem;
+  top: -80px;
+.form-horizontal{
+  top: -60px;
+}
+button{
+  text-align: center;
+}
+label{
+  color: #fff;
+}
+a{
+  padding: 1rem;
+  padding-left: 0;
+  margin: 0;
+  color: #fff;
+  text-decoration: underline;
+}
+.control-label{
+  display: none;
+}
+}
+html {
+    height: 100%;
+    body {
+
+        @include gradient();
+        height: 100%;
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .splash-container {
+            height: 100%;
+            position: relative;
+        }
+    }
+}
+#splash {
+    height: 100%;
+    margin:0;
+    overflow: hidden;
+    .row {
+        height: 100%;
+        margin:0;
+    }
+    .wordmark{
+        max-width:450px;
+        margin:auto;
+        display: block;
+        padding-top:6rem;
+  animation-delay: 1.75s;
+    }
+    .leafloader{
+        max-width:300px;
+        margin:auto;
+        display: block;
+        position: relative;
+
+        top: 500px;
+
+    }
+}
+.loading{
+  animation-name: load;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.4s;
+  top: 100px;
+}
+.fadeIn{
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  display: inline-block;
+}
+.unload{
+  top: 0px;
+    animation-name: unload;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes load{
+  0%{
+    top: 500px;
+    transform: scale(0);
+  }
+  100%{
+    top: 0px;
+    transform: scale(1);
+  }
+}
+@keyframes unload{
+  0%{
+    top: 0px;
+
+  }75%{
+    opacity: 0;
+  }
+  100%{
+    top: 500px;
+    transform: scale(0);
+    opacity: 0;
+
+  }
+}
+@keyframes fadeIn{
+  0%{
+opacity: 0;
+  }
+  100%{
+opacity: 1;
+  }
+}

@@ -1,0 +1,68 @@
+{
+   "My Tomatoes": [
+          {
+         "Date": "2017-06-22",
+         "Temp": "27",
+         "TempAvg": "26",
+         "Sun": "75",
+         "SunAvg": "76",
+         "Moisture": "46",
+         "MoistureAvg": "50"
+      },
+      {
+         "Date": "2017-06-18",
+         "Temp": "25",
+         "TempAvg": "26",
+         "Sun": "79",
+         "SunAvg": "76",
+         "Moisture": "43",
+         "MoistureAvg": "50"
+      },
+      {
+        "Date": "2017-06-14",
+        "Temp": "21",
+        "TempAvg": "26",
+        "Sun": "79",
+        "SunAvg": "76",
+        "Moisture": "49",
+        "MoistureAvg": "50"
+
+     },
+     {
+        "Date": "2017-06-10",
+        "Temp": "22",
+        "TempAvg": "26",
+        "Sun": "59",
+        "SunAvg": "76",
+        "Moisture": "65",
+        "MoistureAvg": "50"
+     },
+     {
+        "Date": "2017-06-05",
+        "Temp": "29",
+        "TempAvg": "26",
+        "Sun": "72",
+        "SunAvg": "76",
+        "Moisture": "60",
+        "MoistureAvg": "50"
+     },
+     {
+        "Date": "2017-06-01",
+        "Temp": "24",
+        "TempAvg": "26",
+        "Sun": "70",
+        "SunAvg": "76",
+        "Moisture": "58",
+        "MoistureAvg": "50"
+     },
+     {
+        "Date": "2017-05-28",
+        "Temp": "20",
+        "TempAvg": "26",
+        "Sun": "55",
+        "SunAvg": "65",
+        "Moisture": "46",
+        "MoistureAvg": "50"
+     }
+   ]
+}

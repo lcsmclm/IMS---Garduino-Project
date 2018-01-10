@@ -1,0 +1,13 @@
+.std-btn {
+  background-color: #fff;
+  padding: 10px 45px;
+  color: #000;
+  display: inline-block;
+  border: 1px solid #fff; }
+
+button.std-btn {
+  color: #1F70A5;
+  border-radius: 10px;
+  padding: 10px 75px; }
+
+/*# sourceMappingURL=utils.css.map */

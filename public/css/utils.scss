@@ -1,0 +1,29 @@
+$bluecorporate: #1F70A5;
+$graycorporate: #414042;
+$gnomeblue: #2AA6DA;
+$gnomered: #DE4A3A;
+$gnomegreen: #8DC641;
+$gnomeyellow: #F9ED32;
+$gnomeorange: #F7941D;
+$gnomelightgray:#F8F8F8;
+$gnomedarkgray:#696969;
+$gnomebeige: #E7D7AE;
+$topGradient: #7e8dc0;
+$bottomGradient: #3a92a4;
+@mixin gradient() {
+    background: linear-gradient(to bottom, $topGradient 0%, $bottomGradient 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.std-btn{
+  background-color: #fff;
+  padding: 10px 45px;
+  color: #000;
+  display: inline-block;
+  border: 1px solid #fff;
+}
+button.std-btn{
+  color: #1F70A5;
+  border-radius: 10px;
+  padding: 10px 75px;
+}

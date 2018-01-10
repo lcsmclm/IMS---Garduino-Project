@@ -1,0 +1,24 @@
+.lead-svg {
+  animation-name: load;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
+  top: 100%;
+  display: inline-block;
+  border: 1px solid red;
+  display: none !important; }
+
+@keyframes load {
+  0% {
+    top: 500px;
+    transform: scale(0); }
+  100% {
+    top: 0px;
+    transform: scale(1); } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=svg.css.map */
